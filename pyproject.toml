@@ -1,0 +1,25 @@
+[project]
+name = "jax-sandbox"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = "==3.10.*"
+dependencies = [
+    "chex",
+    "distrax",
+    "equinox",
+    "gymnasium",
+    "jax[cuda12]",
+    "jaxtyping",
+    "optax",
+    "orbax",
+    "penzai",
+]
+
+[project.optional-dependencies]
+isaac = [
+    "isaaclab[all,isaacsim]==2.1.0",
+]
+
+[[tool.uv.index]]
+url = "https://pypi.nvidia.com/"
